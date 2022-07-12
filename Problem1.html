@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 500px;
+            /* height: 500px;
+            border: 1px solid blue; */
+            margin: auto;
+            margin-top: 140px;
+            background-color: white;
+          
+        }
+     
+        .first_row{
+    
+            /* height: 100px; */
+           
+            display: flex;
+            /* margin: auto; */
+          
+            
+        }
+        .item{
+            width: 50px;
+            height: 60px;
+           
+            margin: 10px;
+            background-color: rgb(79, 235, 79);
+            border: 3px solid black;
+            
+            
+        }
+        #item-2{
+            flex-grow: 4;
+        }
+        .second_row{
+            display: flex;
+        }
+        #item-3{
+        flex-grow: 1;
+        }
+    
+        #item-5{
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first_row">
+            <div class="item"></div>
+            <div class="item" id="item-2"></div>
+            <div class="item"></div>
+        </div>
+        <div class="second_row">
+            <div class="item" id="item-2"></div>
+            <div class="item" ></div>
+            <div class="item" id="item-3"></div>
+        </div>
+        <div class="second_row">
+            <div class="item"></div>
+            <div class="item" id="item-3"></div>
+            <div class="item" id="item-5"></div>
+        </div>
+        <div class="second_row">
+            <div class="item" id="item-3"></div>
+            <div class="item" ></div>
+            <div class="item" id="item-3"></div>
+            <div class="item"></div>
+            <div class="item" id="item-3"></div>
+        </div>
+    </div>
+ 
+</body>
+</html>
